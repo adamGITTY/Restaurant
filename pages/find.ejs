@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="all.css" type="text/css">
+</head>
+<body>
+    <div id="bg">
+        <div id="bg2">
+            <p id="title"><b>The Slavic Stove</b>
+                <a href="/menu" class="bt"><b>Menu</b></a>
+                <a href="/order" class="bt"><b>Order</b></a>
+                <a href="/find" class="bt"><b>Find</b></a>
+                <a href="/" class="bt"><b>Our Story</b></a>
+            </p>
+        </div>
+
+        <div class="section">
+            <form action="http://localhost:3000/find" method="post">
+                <p class="sectitle">Find My Order!</p>
+                <p class="findtext">Full Name:</p>
+                <input type="text" class="findfield" name="name" size="60" required>
+
+                <p class="findtext"> <%- msg %></p>
+                <input type="submit" value="Find" class="findsub">
+            </form>
+        </div>
+    </div>
+</body>

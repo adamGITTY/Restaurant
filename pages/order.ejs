@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="all.css" type="text/css">
+</head>
+<body>
+    <div id="bg">
+        <div id="bg2">
+            <p id="title"><b>The Slavic Stove</b>
+                <a href="/menu" class="bt"><b>Menu</b></a>
+                <a href="/order" class="bt"><b>Order</b></a>
+                <a href="/find" class="bt"><b>Find</b></a>
+                <a href="/" class="bt"><b>Our Story</b></a>
+            </p>
+        </div>
+
+        <div class="section">
+            <form action="http://localhost:3000/order" method="post">
+                <p>
+                    <input type="text" class="sfield" name="email" size="60" placeholder="optional">
+                    <p class="stext">Email:</p>
+
+                    <p class="text">Full Name:</p>
+                    <input type="text" class="field" name="name" size="60" required>
+
+                    <p class="text">Phone Number:</p>
+                    <input type="text" class="field" name="pn" size="150" required>
+
+                    <p class="text">Full Address:</p>
+                    <input type="text" class="field" name="addy" size="150" required>
+
+                </p>
+
+                <br>
+                <p class="text">
+                    Appetizers:
+                    <select name="apps" class="cfield" multiple>
+                        <option value="app1">Chicken Skewer ($5.00)</option>
+                        <option value="app2">Duck Bill ($7.50)</option>
+                        <option value="app3">Mini Pizza ($2.00)</option>
+                    </select>
+
+                    Full Meals:
+                    <select name="meals" class="cfield" multiple>
+                        <option value="fm1">Meal 1</option>
+                        <option value="fm2">Meal 2</option>
+                        <option value="fm3">Meal 3</option>
+                        <option value="fm4">Meal 4</option>
+                    </select>
+
+                    Drinks:
+                    <select name="drinks" class="cfield" multiple>
+                        <option value="dr1">Meal 1</option>
+                        <option value="dr2">Meal 2</option>
+                        <option value="dr3">Meal 3</option>
+                        <option value="dr4">Meal 4</option>
+                    </select>
+
+                    Deserts:
+                    <select name="deserts" class="cfield" multiple>
+                        <option value="ds1">Meal 1</option>
+                        <option value="ds2">Meal 2</option>
+                        <option value="ds3">Meal 3</option>
+                        <option value="ds4">Meal 4</option>
+                    </select>
+                </p>
+
+                <p class="text">Comments: <input type="text" id="field2" name="comments" size="130"> </p>
+
+                <br>
+                <input type="submit" value="Submit Order" class="subbtn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
