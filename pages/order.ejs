@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="all.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kite+One">
+    <style> body {font-family: 'Kite One';}</style> 
+</head>
+<body>
+    <div id="bg">
+        <div id="bg2">
+            <p id="title"><b>The Slavic Stove</b>
+                <a href="/menu" class="bt"><b>Menu</b></a>
+                <a href="/order" class="bt"><b>Order</b></a>
+                <a href="/find" class="bt"><b>Find</b></a>
+                <a href="/" class="bt"><b>Our Story</b></a>
+            </p>
+        </div>
+
+        <div class="section">
+            <form action="http://localhost:3000/order" method="post">
+                <p>
+                    <input type="email" class="sfield" name="email" size="60" placeholder="optional">
+                    <p class="stext">Email:</p>
+
+                    <p class="text">Full Name:</p>
+                    <input type="text" class="field" name="name" size="60" required>
+
+                    <p class="text">Phone Number:</p>
+                    <input type="text" class="field" name="pn" size="150" required>
+
+                    <p class="text">Full Address:</p>
+                    <input type="text" class="field" name="addy" size="150" required>
+
+                </p>
+
+                <br>
+                <p class="text">
+                    Appetizers:
+                    <select name="apps" class="cfield" multiple size="3">
+                        <option value=" Smoked Salmon Blini">Smoked Salmon Blini ($9.99)</option>
+                        <option value=" Pierogi">Pierogi ($7.99)</option>
+                        <option value=" Borscht">Borscht ($5.99)</option>
+                    </select>
+
+                    Full Meals:
+                    <select name="meals" class="cfield" multiple size="3">
+                        <option value=" Beef Stroganoff">Beef Stroganoff ($16.99)</option>
+                        <option value=" Cabbage Rolls">Cabbage Rolls ($12.99)</option>
+                        <option value=" Chicken Kiev">Chicken Kiev ($14.99)</option>
+                    </select>
+
+                    Drinks:
+                    <select name="drinks" class="cfield" multiple size="3">
+                        <option value=" Kvas">Kvas ($3.99)</option>
+                        <option value=" Mors">Mors ($2.99)</option>
+                        <option value=" Vodka">Vodka ($8.99)</option>
+                    </select>
+
+                    Desserts:
+                    <select name="deserts" class="cfield" multiple size="3">
+                        <option value=" Medovik">Medovik ($7.99)</option>
+                        <option value=" Syrniki">Syrniki ($6.99)</option>
+                        <option value=" Kulich">Kulich ($9.99)</option>
+                    </select>
+                </p>
+
+                <p class="text">Comments: <input type="text" id="field2" name="comments" size="130"> </p>
+
+                <br>
+                <input type="submit" value="Submit Order" class="subbtn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
